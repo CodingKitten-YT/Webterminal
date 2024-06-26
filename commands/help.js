@@ -1,0 +1,33 @@
+export default function({ log, clear }) {
+    clear();
+    log('Available Commands:');
+    log('');
+    log('  help - Display a list of available commands and their descriptions');
+    log('  echo <text> - Echo the provided text back into the terminal');
+    log('  clear - Clear the terminal screen');
+    log('  date - Display the current date and time');
+    log('  mkdir <directory_path> - Create a new directory or nested directories');
+    log('  ls - List files and directories in the current directory');
+    log('  meow <filename> - Open a text editor to edit or create a text file');
+    log('  cd <directory> - Change directory to the specified directory');
+    log('  rm <filename> - Remove the specified file');
+    log('  rmdir <directory> - Remove the specified directory');
+    log('');
+    log('Command Details:');
+    log('');
+    log('  cd <directory>');
+    log('    - Change directory to the specified directory. Use ".." to move back to the parent directory.');
+    log('');
+    log('  meow <filename>');
+    log('    - Open a text editor to edit or create a text file with the specified filename.');
+    log('    - Press Esc to save and exit the editor.');
+    log('');
+    log('  mkdir <directory_path>');
+    log('    - Create a new directory or nested directories. Example: mkdir /wow/test creates "wow" and "test" inside "wow".');
+    log('');
+    log('  rm <filename>');
+    log('    - Remove the specified file. Example: rm myfile.txt');
+    log('');
+    log('  rmdir <directory>');
+    log('    - Remove the specified directory. Example: rmdir mydirectory. Note: The directory must be empty.');
+}
